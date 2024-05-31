@@ -1,5 +1,14 @@
 {
 	"name": "@webstd/package-boilerplate",
 	"version": "0.0.4",
-	"exports": "./src/mod.ts"
+	"exports": "./src/mod.ts",
+	"publish": {
+		"include": [
+			"README.md",
+			"src/**/*.ts"
+		],
+		"exclude": [
+			"src/main.ts"
+		]
+	}
 }
